@@ -2,11 +2,11 @@
 
 from Animals import Cat, Dog
 
-from Animals import *
+Cat.Cat()
+Dog.Dog()
+
 import Animals
 
 Animals.Cat.Cat()
 Animals.Dog.Dog()
 
-Cat.Cat()
-Dog.Dog()
