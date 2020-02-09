@@ -2,7 +2,7 @@
 
 import os
 
-file = open("text_12.txt", "w+", 1)
+file = open("text_12.txt", "w+")
 
 print(file.name)
 print(file.closed)
@@ -30,6 +30,11 @@ print(text)
 print("Position: ", file.tell())
 file.seek(0,0)
 print(file.read(10))
+
+print("line")
+with open("text_12.txt") as f:
+	for line in f:
+		print(line)
 
 os.rename("text_12.txt","text_12_1.txt")
 os.remove("text_12_1.txt")
